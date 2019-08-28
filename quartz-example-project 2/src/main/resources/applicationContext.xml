@@ -1,0 +1,77 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="ImportReportService" class="com.concretepage.job.ImportReportService" />
+
+    <!-- Quartz Job -->
+    <bean name="My10SecJob" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
+        <property name="jobClass" value="com.concretepage.job.My10SecJob" />
+        <property name="Durability" value="true"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="importReportService" value-ref="ImportReportService" />
+                <entry key="report_name" value="LM_XB401,LM_XB403,LM_XB405,CUSTOM-Carlot-Daily" />
+            </map>
+        </property>
+    </bean>
+
+    <bean name="My20SecJob" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
+        <property name="jobClass" value="com.concretepage.job.My10SecJob" />
+        <property name="Durability" value="true"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="importReportService" value-ref="ImportReportService" />
+                <entry key="report_name" value="LM_XB452,LM_XB454,LM_XB455,LM_XB456,LM_XB462,CUSTOM-Carlot-Weekly" />
+            </map>
+        </property>
+    </bean>
+
+    <bean name="My30SecJob" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
+        <property name="jobClass" value="com.concretepage.job.My10SecJob" />
+        <property name="Durability" value="true"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="importReportService" value-ref="ImportReportService" />
+                <entry key="report_name" value="LM_XB459,LM_XB460,LM_XB461" />
+            </map>
+        </property>
+    </bean>
+
+    <!-- Cron Trigger, run every 5 seconds -->
+    <bean id="cronTriggermyJob10"
+          class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail" ref="My10SecJob" />
+        <property name="cronExpression" value="00 05 12 ? * Mon-Fri" />
+    </bean>
+
+    <bean id="cronTriggermyJob20"
+          class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail" ref="My20SecJob" />
+        <property name="cronExpression" value="00 08 12 ? * Fri" />
+    </bean>
+
+    <bean id="cronTriggermyJob30"
+          class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail" ref="My30SecJob" />
+        <property name="cronExpression" value="00 11 12 ? * Wed-Fri" />
+    </bean>
+
+    <bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="jobDetails">
+            <list>
+                <ref bean="My10SecJob" />
+                <ref bean="My20SecJob" />
+                <ref bean="My30SecJob" />
+            </list>
+        </property>
+        <property name="triggers">
+            <list>
+                <ref bean="cronTriggermyJob10" />
+                <ref bean="cronTriggermyJob20" />
+                <ref bean="cronTriggermyJob30" />
+            </list>
+        </property>
+    </bean>
+</beans>

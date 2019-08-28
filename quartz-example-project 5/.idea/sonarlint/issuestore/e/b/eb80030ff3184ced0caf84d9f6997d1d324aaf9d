@@ -1,0 +1,14 @@
+
+nsquid:S001172"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ôä‚Œüÿÿÿÿ
+osquid:UselessImportCheck"FRemove this unused import 'java.util.concurrent.atomic.AtomicInteger'.(¿êäœøÿÿÿÿ
+isquid:S00117#"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğİü
+isquid:S00117#"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğİü
+isquid:S00117#"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğİü
+ksquid:S001002"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ôä‚Œüÿÿÿÿ
+fsquid:S00100#"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğİü
+nsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å‡£ˆÿÿÿÿÿ
+Bsquid:S11722"&Remove these unused method parameters.(Ôä‚Œüÿÿÿÿ
+nsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ì‚¼Ìşÿÿÿÿ
+nsquid:S001172"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ôä‚Œüÿÿÿÿ
+Hsquid:S5411"*Use the primitive boolean expression here.(‡î·À8ûî“èÈ-
+Hsquid:S5411"*Use the primitive boolean expression here.(Û¹¯â8ûî“èÈ-

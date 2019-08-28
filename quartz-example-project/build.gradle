@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'quartz-example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.quartz-scheduler:quartz:2.3.1'
+    compile group: 'org.springframework', name: 'spring-context-support', version: '4.0.0.RELEASE'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}

@@ -1,0 +1,30 @@
+
+ksquid:S00100>"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ôä‚Œüÿÿÿÿ
+isquid:S00117."QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğİü
+Bsquid:S1172>"&Remove these unused method parameters.(Ôä‚Œüÿÿÿÿ
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(¢—¿Åşÿÿÿÿ
+nsquid:S00117>"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ôä‚Œüÿÿÿÿ
+T
+squid:S106+"9Replace this use of System.out or System.err by a logger.(áåæüÿÿÿÿ
+O
+squid:S1061"9Replace this use of System.out or System.err by a logger.(ò»Ÿò
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¤”ƒÒûÿÿÿÿ
+T
+squid:S106)"9Replace this use of System.out or System.err by a logger.(Ë¦³ûùÿÿÿÿ
+O
+squid:S106!"9Replace this use of System.out or System.err by a logger.(³ÏÓ³
+bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ü”ğÕ
+nsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ì‚¼Ìşÿÿÿÿ
+t
+squid:S135"YReduce the total number of break and continue statements in this loop to use at most one.(ŒØ¢ûÿÿÿÿ
+]squid:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+Asquid:S00108$")Either remove or fill this block of code.(á¢–¬
+isquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸úĞŒ
+T
+squid:S106@"9Replace this use of System.out or System.err by a logger.(…»îÔúÿÿÿÿ
+fsquid:S00100."NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğİü
+isquid:S00117."QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğİü
+nsquid:S00117>"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ôä‚Œüÿÿÿÿ
+isquid:S00117."QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğİü
+?squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
